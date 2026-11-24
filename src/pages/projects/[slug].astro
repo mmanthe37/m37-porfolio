@@ -1,0 +1,9 @@
+---
+import Site from '../../layouts/Site.astro';
+import Art from '../../components/Art.astro';
+import {path,projects} from '../../lib/site';
+export function getStaticPaths(){ return projects.map(project=>({params:{slug:project.slug},props:{project}})); }
+const {project:p}=Astro.props;
+---
+<Site title={p.name} description={p.summary} section="Projects" route={'projects/'+p.slug+'/'}>
+<header class="intro"><a class="textlink" href={path('projects/')}>← Projects</a><p class="meta">{p.status}</p><h1>{p.name}</h1><p>{p.summary}</p></header><div class="casegrid"><aside><Art slug={p.slug}/><h2>{p.links.length ? 'Explore the work' : 'Private research project'}</h2><div class="linklist">{p.links.map(l=><a href={l.url}>{l.label} ↗</a>)}</div><p class="muted">{p.tags.join(' · ')}</p></aside><div>{[['The problem',p.problem],['My role',p.role],['Implementation',p.implementation],['Evidence',p.evidence],['Limitations',p.limits],['Next step',p.next_step]].map(([label,body])=><section class="entry"><h2>{label}</h2><p>{body}</p></section>)}<p class="meta">Evidence reviewed {p.verified_on}</p></div></div></Site>

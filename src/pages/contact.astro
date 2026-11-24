@@ -1,0 +1,5 @@
+---
+import Site from '../layouts/Site.astro';
+import {profile,resume} from '../lib/site';
+---
+<Site title="Contact" description="Professional contact and verified profiles for Michael Manthe Jr. of M37 Development." section="Contact" route="contact/"><header class="intro"><h1>Get in touch</h1><p>For conversations about applied AI, software engineering or technical product roles, reach me on LinkedIn.</p></header><div class="contactlist">{profile.profiles.map((p,i)=><a href={p.url}><div><h2>{p.label}</h2><p>{i===0?'Connect with Michael Manthe Jr.':'Browse source code and project repositories.'}</p></div><span>↗</span></a>)}<a href={resume} download><div><h2>Résumé</h2><p>Download my one-page professional résumé as a PDF.</p></div><span>↓</span></a></div></Site>

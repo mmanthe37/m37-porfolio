@@ -1,0 +1,7 @@
+---
+import Site from '../layouts/Site.astro';
+import {profile,resume} from '../lib/site';
+---
+<Site title="Experience" description="Michael Manthe Jr.’s experience in product development, service operations and customer-facing roles." section="Experience" route="experience/">
+<header class="intro"><h1>Experience</h1><p>Independent product development, business ownership and frontline customer service in Central Florida.</p><a class="button" href={resume} download>Download résumé ↓</a></header>
+<div class="casegrid"><aside><h2>Technical practice</h2>{profile.skills_by_evidence.map(s=><div class="entry"><h3>{s.area}</h3><p>{s.skills.join(' · ')}</p></div>)}</aside><section><h2>Professional experience</h2>{profile.experience.map(e=><article class="entry"><p class="meta">{e.dates}</p><h3>{e.organization}</h3><strong>{e.role}</strong><p>{e.contribution}</p></article>)}<h2>Education</h2>{profile.education.map(e=><p><strong>{e.program}</strong><br/>{e.school} · {e.detail} · {e.status}</p>)}</section></div></Site>

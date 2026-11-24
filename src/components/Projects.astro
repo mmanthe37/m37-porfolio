@@ -1,0 +1,5 @@
+---
+import {projects, projectPage} from '../lib/site';
+import Art from './Art.astro';
+---
+<div class="cards">{projects.map((p,i)=><article class:list={['card',{'featured':i===0}]}><Art slug={p.slug}/><div class="cardbody"><p class="meta">{p.status}</p><h3><a href={projectPage(p.slug)}>{i===0?'VLEP / CSEP':p.name}</a></h3><p>{p.summary}</p><div class="cardlinks"><a href={projectPage(p.slug)}>Case study →</a>{p.links.length > 0 && <a href={p.links[0].url}>{i===0?'Synthetic demo':'Source code'} ↗</a>}</div></div></article>)}</div>

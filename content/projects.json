@@ -1,0 +1,118 @@
+[
+  {
+    "slug": "vlep",
+    "name": "Versioned Longitudinal Epilepsy Phenotype (VLEP)",
+    "status": "Research demo",
+    "tags": [
+      "Research software",
+      "Python",
+      "React",
+      "Synthetic data"
+    ],
+    "summary": "An interactive synthetic case shows how an epilepsy profile can change under a newer classification framework while the original evidence stays traceable.",
+    "role": "Project creator. Designed the research model and directed AI-assisted development of the software and workbench.",
+    "problem": "A single diagnostic label can hide what was known at a given time and how a reviewer reached a newer interpretation.",
+    "implementation": "A six-stage pipeline preserves observations in an append-only ledger and resolves a six-dimensional Current-State Epilepsy Profile (CSEP). The workbench exposes the underlying evidence and flags conditional interpretations for review.",
+    "evidence": "The public workbench loaded. All eight tests for the synthetic Python core passed locally, including deterministic output, ledger integrity and preservation of evidence across framework changes.",
+    "limits": "The example uses a fictional case. Clinical performance, patient safety and utility have not been established.",
+    "next_step": "Match the served build to a successfully deployed commit before advertising a release version.",
+    "verified_on": "2026-11-24",
+    "links": [
+      {
+        "label": "Open synthetic demo",
+        "url": "https://mmanthe37.github.io/vlep-csep-investor-demo/"
+      },
+      {
+        "label": "View source",
+        "url": "https://github.com/mmanthe37/vlep-csep-investor-demo"
+      },
+      {
+        "label": "Inspect core tests",
+        "url": "https://github.com/mmanthe37/vlep-csep-investor-demo/blob/main/tests_mvp/test_research_mvp.py"
+      }
+    ]
+  },
+  {
+    "slug": "gear-ai",
+    "name": "GEAR AI CoPilot",
+    "status": "Mobile and web prototype",
+    "tags": [
+      "Automotive",
+      "TypeScript",
+      "React Native",
+      "Expo"
+    ],
+    "summary": "A vehicle-owner application that brings garage records, maintenance and vehicle identification into one interface.",
+    "role": "Designed the vehicle-owner experience and directed development of a cross-platform application and its data services.",
+    "problem": "Vehicle information is scattered across manuals, maintenance records and separate reference sites.",
+    "implementation": "The source includes Expo routes for garage, maintenance, chat and diagnostics, an automotive VIN-decoding module and services for retrieving manual information.",
+    "evidence": "The hosted web entry reached sign-in. The repository contains screens and service code that a reviewer can inspect without an account.",
+    "limits": "The signed-in workflows and a public app-store release have not been verified. Hardware diagnostics, billing and live valuations need feature-level evidence.",
+    "next_step": "Record a short walkthrough with fictional vehicle records or build an anonymous preview of one maintenance task.",
+    "verified_on": "2026-11-24",
+    "links": [
+      {
+        "label": "Inspect application source",
+        "url": "https://github.com/mmanthe37/gear_ai_v2"
+      },
+      {
+        "label": "Browse screens",
+        "url": "https://github.com/mmanthe37/gear_ai_v2/tree/main/app"
+      },
+      {
+        "label": "Open hosted sign-in",
+        "url": "https://gear-ai-v2.vercel.app/"
+      }
+    ]
+  },
+  {
+    "slug": "pool-service-dashboard",
+    "name": "Pool Service Dashboard",
+    "status": "Source prototype",
+    "tags": [
+      "Business operations",
+      "React",
+      "TypeScript",
+      "FastAPI"
+    ],
+    "summary": "A service-business dashboard organizes leads, customers and service records, drawing on the kinds of workflows I managed as a business owner.",
+    "role": "Independent developer. Connected day-to-day service workflows with a React interface and a Python API.",
+    "problem": "A service operator needs to see which leads need follow-up and where customer and service information belongs.",
+    "implementation": "The repository includes lead, customer and dashboard screens alongside FastAPI routes and data models for customers, leads and service records.",
+    "evidence": "Frontend pages and backend route registration were inspected. The two source links open directly to those components.",
+    "limits": "A public deployment, customer adoption and end-to-end operation have not been verified.",
+    "next_step": "Demonstrate a fictional lead moving through the workflow and record the result.",
+    "verified_on": "2026-11-24",
+    "links": [
+      {
+        "label": "Inspect frontend pages",
+        "url": "https://github.com/mmanthe37/pool-service-dashboard/tree/main/src/pages"
+      },
+      {
+        "label": "Inspect API entry point",
+        "url": "https://github.com/mmanthe37/pool-service-dashboard/blob/main/api/app/main.py"
+      }
+    ]
+  },
+  {
+    "slug": "evochronos",
+    "name": "EvoChronos",
+    "status": "Research prototype · private source",
+    "tags": [
+      "Evolutionary simulation",
+      "Rust",
+      "Python",
+      "Reproducibility"
+    ],
+    "summary": "An experimental evolution simulator for comparing runs under different starting conditions and tracking how each result was produced.",
+    "role": "I designed the research sandbox and directed its AI-assisted implementation with Codex.",
+    "problem": "When two simulations diverge, a researcher needs to know which inputs changed and whether the original run can be repeated.",
+    "implementation": "A Rust command-line runner executes the early model. A Python client and HTTP interface provide additional ways to launch runs. A run manifest records the configuration used for an experiment.",
+    "evidence": "The private development repository contains the runner, client and run documentation. The implementation targets repeatable runs under a pinned build.",
+    "limits": "The model is experimental. Its outputs have not been validated as predictions of real evolutionary history. The browser interface is at the scaffold stage.",
+    "next_step": "Publish a small worked example comparing two runs, together with the settings and manifests needed to reproduce them.",
+    "verified_on": "2026-11-24",
+    "source_access": "private",
+    "links": []
+  }
+]
