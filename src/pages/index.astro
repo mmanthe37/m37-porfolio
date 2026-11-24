@@ -1,0 +1,9 @@
+---
+import Site from '../layouts/Site.astro';
+import Projects from '../components/Projects.astro';
+import {path,resume} from '../lib/site';
+---
+<Site title="Developer portfolio" description="Independent developer and data analytics student in Central Florida. Explore Michael Manthe Jr.’s research and software projects." section="Home" route="">
+<section class="hero"><div><h1>Michael<br/>Manthe <em>Jr.</em></h1><p>Independent developer and data analytics student in Central Florida.</p><div class="buttons"><a class="button" href={path('projects/')}>Explore projects <span>→</span></a><a class="button ghost" href={resume} download>Download résumé <span>↓</span></a></div></div><figure class="heroart"><img src={path('images/glass-layers.webp')} alt="Four floating layers of etched green glass" width="1050" height="1050" fetchpriority="high"/></figure></section>
+<section class="section"><div class="sectionhead"><h2>Selected projects</h2><span></span><a href={path('projects/')}>View all →</a></div><Projects/></section>
+<section class="home-end"><div><h2>Research &amp; academics</h2><p>My VLEP symposium poster explores how to preserve observations while classification rules change.</p><a class="textlink" href={path('research/')}>Explore my research →</a></div><div><h2>Experience</h2><p>Running service businesses taught me to design around the people doing the work.</p><a class="textlink" href={path('experience/')}>View my experience →</a></div></section></Site>

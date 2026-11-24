@@ -1,0 +1,9 @@
+---
+interface Props {slug:string}
+const {slug}=Astro.props;
+---
+<div class={'art art-'+slug} aria-hidden="true">
+{slug==='vlep' ? <div class="ledger"><div class="artlabel"><span>Evidence ledger</span><span>SYN-0042</span></div><table><thead><tr><th>Event</th><th>Source</th><th>Observed</th></tr></thead><tbody>{[['1001','Clinical note','08:14'],['1002','EEG study','09:02'],['1003','Imaging','10:31']].map(row=><tr>{row.map(c=><td>{c}</td>)}</tr>)}</tbody></table></div> :
+slug==='gear-ai' ? <div class="gearplate"><span class="artlabel">Vehicle identification</span><strong>VIN<span> / </span>17</strong><div class="barcode"></div></div> :
+slug==='evochronos' ? <div class="ledger"><div class="artlabel">Simulation run manifest</div><table><thead><tr><th>Run</th><th>Seed</th><th>Scenario</th></tr></thead><tbody><tr><td>A</td><td>37</td><td>Baseline</td></tr><tr><td>B</td><td>37</td><td>Variant</td></tr></tbody></table></div> : <div class="poolplate"><div class="artlabel">Service workflow</div>{['Leads','Customers','Service records'].map((item,i)=><div class="poolrow"><i>{String(i+1).padStart(2,'0')}</i>{item}</div>)}</div>}
+</div>

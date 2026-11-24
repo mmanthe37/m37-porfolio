@@ -1,0 +1,109 @@
+{
+  "name": "Michael Manthe Jr.",
+  "brand": "M37 Development",
+  "location": "Central Florida",
+  "headline": "Independent AI-assisted developer and data analytics student",
+  "intro": "I build research and business software. My epilepsy research demo lets a reviewer trace how a result changes when classification rules change. My experience running service businesses shapes another part of my work: tools for following up with customers and keeping operations organized.",
+  "career_focus": "AI software engineering, applied data work and technical product roles",
+  "profiles": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/michael-manthe/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mmanthe37"
+    }
+  ],
+  "resume_file": "public/downloads/michael-manthe-jr-resume.pdf",
+  "education": [
+    {
+      "school": "Seminole State College of Florida",
+      "program": "Bachelor of Science in Business and Information Management",
+      "detail": "Data Analytics specialization",
+      "status": "Expected August 2027",
+      "program_url": "https://www.seminolestate.edu/catalog/programs/bim-bs"
+    },
+    {
+      "school": "Seminole State College of Florida",
+      "program": "Associate of Arts",
+      "detail": "Business/Commerce",
+      "status": "December 2025"
+    }
+  ],
+  "honors": [
+    "Grindle Honors Institute",
+    "Phi Theta Kappa, Pi Lambda Chapter",
+    "Dean’s List, Summer 2023"
+  ],
+  "experience": [
+    {
+      "organization": "M37 Development",
+      "role": "Founder & AI Product Developer",
+      "dates": "2024–present",
+      "contribution": "Define product requirements, design architectures and direct AI-assisted implementation, testing and documentation for independent software projects."
+    },
+    {
+      "organization": "Jonah’s Cleaning Service",
+      "role": "Founder & Operations Lead",
+      "dates": "Mar 2023–Nov 2025",
+      "contribution": "Managed customer acquisition, scheduling, supplies, client communication, finances and service delivery in Greater Orlando."
+    },
+    {
+      "organization": "Harbor Freight Tools",
+      "role": "Sales Supervisor",
+      "dates": "Aug 2021–Feb 2023",
+      "contribution": "Coached retail associates, resolved customer concerns and used frontline feedback to improve the customer experience in Casselberry."
+    },
+    {
+      "organization": "The Wall Doctors LLC",
+      "role": "Founder & Operator",
+      "dates": "Jan 2018–Jul 2021",
+      "contribution": "Ran estimating, vendor coordination, project scheduling, team supervision and customer relationships for a renovation business."
+    },
+    {
+      "organization": "KB Drywall Inc.",
+      "role": "Construction Specialist",
+      "dates": "2014–2018",
+      "contribution": "Supported inspections, scope development and project estimates."
+    },
+    {
+      "organization": "Murphy Real Estate",
+      "role": "Broker Assistant",
+      "dates": "2011–2014",
+      "contribution": "Supported market research, pricing analysis and lead management."
+    }
+  ],
+  "skills_by_evidence": [
+    {
+      "area": "Research software",
+      "skills": [
+        "Python",
+        "deterministic testing",
+        "evidence provenance"
+      ],
+      "example": "VLEP research MVP"
+    },
+    {
+      "area": "Mobile and web",
+      "skills": [
+        "TypeScript",
+        "React Native",
+        "Expo",
+        "React"
+      ],
+      "example": "GEAR AI CoPilot and the Pool Service Dashboard"
+    },
+    {
+      "area": "Data and operations",
+      "skills": [
+        "SQL",
+        "SQLite",
+        "PostgreSQL",
+        "workflow design"
+      ],
+      "example": "M37 Evidence and service-business operations"
+    }
+  ],
+  "research_highlight": "Developed a VLEP poster for the Seminole State College Research Symposium about preserving observations while recomputing a versioned epilepsy profile."
+}

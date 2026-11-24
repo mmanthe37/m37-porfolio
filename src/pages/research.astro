@@ -1,0 +1,7 @@
+---
+import Site from '../layouts/Site.astro';
+import {profile,projectPage} from '../lib/site';
+---
+<Site title="Research & academics" description="Independent epilepsy phenotyping research and academic work at Seminole State College of Florida." section="Research" route="research/">
+<header class="intro"><h1>Research &amp; academics</h1><p>Studying how data becomes evidence, and how software can make that evidence easier to review.</p></header>
+<div class="split"><section><p class="meta">Research symposium poster</p><h2>Recomputing an epilepsy profile</h2><p>{profile.research_highlight}</p><p>The synthetic workbench follows one fictional case through a change in classification framework. Its research question is whether the interpretation can change while the original evidence stays intact.</p><a class="textlink" href={projectPage('vlep')}>Read the VLEP case study →</a><div class="entry"><h2>Repeatable evolutionary simulations</h2><p>EvoChronos explores how to compare simulated outcomes when starting conditions change. Recording the inputs for each run makes those comparisons easier to inspect.</p><a class="textlink" href={projectPage('evochronos')}>Read the EvoChronos case study →</a></div></section><section><h2>Education</h2>{profile.education.map(e=><div class="entry"><p class="meta">{e.status}</p><h3>{e.program}</h3><p>{e.school}<br/>{e.detail}</p>{e.program_url && <a class="textlink" href={e.program_url}>College program ↗</a>}</div>)}<h3>Honors</h3><ul>{profile.honors.map(h=><li>{h}</li>)}</ul></section></div></Site>
